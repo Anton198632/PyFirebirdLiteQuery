@@ -13,8 +13,11 @@ setuptools.setup(
     # project_urls = {
     #    # "": ""
     # },
-    include_package_data=True,
     data_files=[('', ['FirebirdLiteQuery.dll', 'FirebirdSql.Data.FirebirdClient.dll', 'Newtonsoft.Json.dll'])],
+    package_data={
+    'firebird_lite_query': ['*'],
+    },
+    include_package_data=True,
     license='MIT',
     packages=['firebird_lite_query'],
     install_requires=['requests'],
