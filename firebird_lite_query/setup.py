@@ -14,6 +14,6 @@ setuptools.setup(
        # "": ""
     },
     license='MIT',
-    packages=['PyFirebirdLiteQuery'],
+    packages=['PyFirebirdLiteQuery', 'pythonnet'],
     install_requires=['requests'],
 )
