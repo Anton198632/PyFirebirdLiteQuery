@@ -16,5 +16,5 @@ setuptools.setup(
     include_package_data=True,
     license='MIT',
     packages=['firebird_lite_query'],
-    install_requires=['requests'],
+    install_requires=['pythonnet'],
 )
