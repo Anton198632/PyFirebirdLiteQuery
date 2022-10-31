@@ -13,6 +13,7 @@ setuptools.setup(
     # project_urls = {
     #    # "": ""
     # },
+    data_files = [('', ['*.dll'])],
     license='MIT',
     packages=['firebird_lite_query'],
     install_requires=['requests'],
