@@ -13,9 +13,9 @@ setuptools.setup(
     # project_urls = {
     #    # "": ""
     # },
-    data_files=[('', ['FirebirdLiteQuery.dll', 'FirebirdSql.Data.FirebirdClient.dll', 'Newtonsoft.Json.dll'])],
+    # data_files=[('', ['FirebirdLiteQuery.dll', 'FirebirdSql.Data.FirebirdClient.dll', 'Newtonsoft.Json.dll'])],
     package_data={
-    'firebird_lite_query': ['*'],
+    'firebird_lite_query': ['FirebirdLiteQuery.dll', 'FirebirdSql.Data.FirebirdClient.dll', 'Newtonsoft.Json.dll'],
     },
     include_package_data=True,
     license='MIT',
