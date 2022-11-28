@@ -15,5 +15,12 @@ def execute_reader(sql: str) -> str:
         yield response
 
 
-def execute_non_query(sql: str) -> str:
-    return FirebirdLiteQuery.Executor.ExecuteNonQuery(sql)
+def execute_non_query(sql: str, parameters: dict = None) -> str:
+    if parameters is None:
+        return FirebirdLiteQuery.Executor.ExecuteNonQuery(sql)
+    else:
+        parameters_dict = FirebirdLiteQuery.Executor.CreateParameters()
+        for key in parameters:
+            parameters_dict.Add(key, parameters.get(key))
+        return FirebirdLiteQuery.Executor.ExecuteNonQuery(sql, parameters_dict)
+

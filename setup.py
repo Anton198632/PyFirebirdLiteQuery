@@ -11,7 +11,11 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url='https://github.com/Anton198632/PyFirebirdLiteQuery',
     package_data={
-    'firebird_lite_query': ['FirebirdLiteQuery.dll', 'FirebirdSql.Data.FirebirdClient.dll', 'Newtonsoft.Json.dll'],
+    'firebird_lite_query':
+        ['FirebirdLiteQuery.dll',
+         'FirebirdSql.Data.FirebirdClient.dll',
+         'Newtonsoft.Json.dll'
+         ],
     },
     include_package_data=True,
     license='MIT',
